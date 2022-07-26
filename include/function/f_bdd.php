@@ -4,7 +4,7 @@ function connexionBDD()
 {
 	try
 	{
-            $con= mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, "geststagesdb-mi-pame.mariadb.database.azure.com", "admindb@geststagesdb-mi-pame", "MIDBadmin,92" , "bdd_geststages", 3306);
+            $con= new PDO('mysql:host=servbd;port=3306;dbname=bdd_geststages;charset=utf8', 'admindb@geststagesdb-mi-pame', 'MIDBadmin,972', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             return $con;
 	}
 	catch(Exception $e)
