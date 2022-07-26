@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'geststages-mi-pame'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_366BF687A2C9444A86F4C5475DF0BE22 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E75E2AC2B3794F7695437221AFCC2BD6 }}
           package: .
