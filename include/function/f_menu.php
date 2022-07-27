@@ -1,6 +1,6 @@
 <?php
 
-function makeMenu($admin, $deconnexion)
+function makeMenu($admin)
 {
     $ongletAccueil = new Onglet('Accueil', 'index.php', 'onglet_accueil');
     $ongletEntreprise = new Onglet('Entreprise', 'listeEntreprise.php', 'onglet_entreprise');
